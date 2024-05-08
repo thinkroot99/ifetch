@@ -3,37 +3,27 @@
 ![](ifetch.png)
 
 #### Introducere
-Acest script Bash oferă utilizatorilor informații detaliate despre sistemul lor Linux. Afișează informații precum numele utilizatorului, sistemul de operare, kernel-ul, uptime-ul, pachetele instalate și memoria utilizată. Scopul acestui script este de a oferi o modalitate rapidă și simplă pentru utilizatorii Linux de a obține informații despre sistemul lor.
+Acest script Bash oferă utilizatorilor informații minime despre sistemul lor Linux. Afișează informații precum numele utilizatorului, sistemul de operare, kernel-ul, uptime-ul, pachetele instalate și memoria utilizată. 
+
+Scopul acestui script este de a oferi o modalitate rapidă și simplă pentru utilizatorii Linux de a obține informații despre sistemul lor.
 
 #### Utilizare
 Pentru a rula scriptul, urmează acești pași:
 
-1. Descarcă scriptul `info.sh` pe sistemul tău Linux.
+1. Descarcă scriptul `iifetch.sh` pe sistemul tău Linux.
 2. Deschide un terminal și navighează la directorul în care ai salvat scriptul.
-3. Execută comanda `bash info.sh` pentru a afișa informațiile despre sistem.
+3. Execută comanda `bash ifetch.sh` pentru a afișa informațiile despre sistem.
 
-#### Exemple de Rulare
+#### Exemplu de Rulare
 ```bash
-bash info.sh
+bash ifetch.sh
 ```
-
-#### Argumente și Opțiuni de Linie de Comandă
-- Nu acceptă argumente sau opțiuni de linie de comandă în prezent.
 
 #### Dependențe
 Acest script nu are dependențe speciale. Poate fi rulat pe orice distribuție Linux fără a necesita instalarea altor pachete sau programe.
 
 #### Compatibilitate
-Scriptul a fost testat și este compatibil cu toate versiunile majore de distribuții Linux, inclusiv dar fără a se limita la:
-
-- Arch Linux
-- Debian
-- Fedora
-- Ubuntu
-- CentOS
-- openSUSE
-- Gentoo
-- Void Linux
+Scriptul a fost creat să fie compatibil cu toate versiunile majore de distribuții Linux, dar a fost testat doar pe Arch Linux.
 
 #### Personalizare
 Dacă dorești să personalizezi scriptul, poți modifica direct codul sursă pentru a adăuga sau elimina informații. Asigură-te că ai cunoștințele necesare despre Bash scripting pentru a face modificările corespunzătoare.
@@ -43,6 +33,7 @@ Scriptul utilizează comenzi și utilitare comune disponibile pe majoritatea dis
 
 #### Ghid de Contribuție
 Dacă dorești să contribuiți la dezvoltarea acestui script, te rog să urmezi acești pași:
+
 1. Fork acestui repository.
 2. Creează o ramură (branch) nouă pentru modificările tale: `git checkout -b feature/Modificari`.
 3. Efectuează modificările și comite-le: `git commit -am 'Adaugă modificările propuse'`.
@@ -50,7 +41,7 @@ Dacă dorești să contribuiți la dezvoltarea acestui script, te rog să urmezi
 5. Deschide un Pull Request (PR) pentru a propune modificările.
 
 #### Licențiere
-Acest script este distribuit sub licența [MIT](https://opensource.org/licenses/MIT).
+Acest script este distribuit sub licența [GPL 3.0](https://github.com/thinkroot99/ifetch?tab=GPL-3.0-1-ov-file).
 
 #### Observații
 - Scriptul nu necesită permisiuni speciale de execuție și poate fi rulat ca utilizator obișnuit.
