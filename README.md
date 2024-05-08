@@ -1,53 +1,40 @@
-### ifetch
-**A command line system information tool written in bash**
+# iFetch
 
-![](ifetch.png)
+## Overview
 
-#### Introduction
-This Bash script provides users with minimal information about their Linux system. It displays information such as the username, operating system, kernel version, uptime, installed packages, and used memory.
+iFetch is a Bash script that provides detailed system information for Linux users. It displays information such as the username, operating system, kernel version, uptime, installed packages, and memory usage. The script aims to offer a quick and simple way for Linux users to retrieve system information.
 
-The purpose of this script is to offer a quick and simple way for Linux users to obtain information about their system.
+![iFetch](ifetch.png)
 
-#### Usage
-To run the script, follow these steps:
+## Usage
 
-1. Download the `ifetch.sh` script to your Linux system.
-2. Open a terminal and navigate to the directory where you saved the script.
-3. Execute the command `bash ifetch.sh` to display system information.
+For detailed instructions on how to use `iFetch` and `install.sh`, please refer to the following documents:
 
-[Usage from any location in the terminal](utilizare.md)
+- [**`ifetch.sh` Usage Instructions**](use_ifetch.md)
+- [**`install.sh` Usage Instructions**](use_install.md)
 
-#### Example Run
-```bash
-bash ifetch.sh
-```
+## Installation
 
-#### Dependencies
-This script has no special dependencies. It can be run on any Linux distribution without requiring the installation of other packages or programs.
+For installation instructions, please refer to the [**`install.sh` Usage Instructions**](use_install.md) document.
 
-#### Compatibility
-The script was created to be compatible with all major versions of Linux distributions, but it has only been tested on Arch Linux.
+## Dependencies
 
-#### Customization
-If you wish to customize the script, you can directly modify the source code to add or remove information. Make sure you have the necessary knowledge of Bash scripting to make the appropriate changes.
+- None
 
-#### Technical Details
-The script uses common commands and utilities available on most Linux distributions to collect and display system information.
+## Compatibility
 
-#### Contribution Guide
-If you wish to contribute to the development of this script, please follow these steps:
+iFetch has been tested on Arch Linux and is expected to work on other major Linux distributions as well.
+
+## Contributing
+
+If you would like to contribute to the development of iFetch, please follow these steps:
 
 1. Fork this repository.
-2. Create a new branch for your changes: `git checkout -b feature/Modifications`.
-3. Make the changes and commit them: `git commit -am 'Add proposed changes'`.
-4. Push your changes: `git push origin feature/Modifications`.
-5. Open a Pull Request (PR) to propose the changes.
+2. Create a new branch for your changes: `git checkout -b feature/YourChanges`.
+3. Make your changes and commit them: `git commit -am 'Add your changes'`.
+4. Push your changes to your fork: `git push origin feature/YourChanges`.
+5. Open a Pull Request (PR) to propose your changes.
 
-#### Licensing
-This script is distributed under the [GPL 3.0 license](https://github.com/thinkroot99/ifetch?tab=GPL-3.0-1-ov-file).
+## License
 
-#### Notes
-- The script does not require special execution permissions and can be run as a regular user.
-- For specific information about the commands used in the script, you can use `man` or `--help` to get more details.
-
-This documentation provides users with detailed information about usage, contribution, and licensing, along with usage examples and important notes. It can be adapted and expanded according to your specific needs and project requirements.
+This project is licensed under the GNU GPL 3.0 License. See the [LICENSE](LICENSE) file for details.
