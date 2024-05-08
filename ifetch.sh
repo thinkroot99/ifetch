@@ -21,16 +21,16 @@ print_system_info() {
 
     # System information
     if command -v lsb_release &>/dev/null; then
-        echo -e "│\e[1;34m💻 OS: $(lsb_release -d -s | sed 's/"/\\"/g')                                                 │"
+        echo -e "│\e[1;34m💻 OS: $(lsb_release -d -s | sed 's/"/\\"/g')                                                                                                     │"
     elif [ -e /etc/os-release ]; then
-        echo -e "│\e[1;34m💻 OS: $(grep "^PRETTY_NAME" /etc/os-release | cut -d "=" -f 2 | tr -d '"' | sed 's/"/\\"/g')│"
+        echo -e "│\e[1;34m💻 OS: $(grep "^PRETTY_NAME" /etc/os-release | cut -d "=" -f 2 | tr -d '"' | sed 's/"/\\"/g')                                                     │"
     else
-        echo -e "│\e[1;34m💻 OS: N/A                                                         │"
+        echo -e "│\e[1;34m💻 OS: N/A                                                                                                                                        │"
     fi
 
     # Other system information
     echo -e "│\e[1;34m🏠 Host: $(hostname)                                                    │"
-    echo -e "│\e[1;34m🐧 Kernel: $(uname -r)                                              │"
+    echo -e "│\e[1;34m🐧 Kernel: $(uname -r)                                           │"
     echo -e "│\e[1;34m⏲️ Uptime: $(uptime -p | sed 's/up //')                                         │"
     echo -e "│\e[1;34m📦 Packages: $(package_count)                                                     │"
     echo -e "│\e[1;34m💾 Memory: $(free -h | awk '/^Mem:/ {print $3 " / " $2}')                                               │"
