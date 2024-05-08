@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Function to display the Arch Linux logo in colored ASCII art
+# Function to display the Linux logo in colored ASCII art
 print_linux_logo() {
     echo -e "\e[1;35m  _     _              _                    _ _                  "
     echo -e "\e[1;35m | |   | |            (_)                  | (_)                 "
