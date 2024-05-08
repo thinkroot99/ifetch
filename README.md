@@ -1,5 +1,7 @@
 ### Documentația pentru Scriptul de Informații Sistem Linux
 
+![](ifetch.png)
+
 #### Introducere
 Acest script Bash oferă utilizatorilor informații detaliate despre sistemul lor Linux. Afișează informații precum numele utilizatorului, sistemul de operare, kernel-ul, uptime-ul, pachetele instalate și memoria utilizată. Scopul acestui script este de a oferi o modalitate rapidă și simplă pentru utilizatorii Linux de a obține informații despre sistemul lor.
 
