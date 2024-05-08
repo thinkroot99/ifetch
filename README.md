@@ -1,4 +1,5 @@
-### Documentația pentru Scriptul de Informații Sistem Linux
+### ifetch
+**Un instrument de informare a sistemului de linie de comandă scris în bash**
 
 ![](ifetch.png)
 
@@ -10,9 +11,11 @@ Scopul acestui script este de a oferi o modalitate rapidă și simplă pentru ut
 #### Utilizare
 Pentru a rula scriptul, urmează acești pași:
 
-1. Descarcă scriptul `iifetch.sh` pe sistemul tău Linux.
+1. Descarcă scriptul `ifetch.sh` pe sistemul tău Linux.
 2. Deschide un terminal și navighează la directorul în care ai salvat scriptul.
 3. Execută comanda `bash ifetch.sh` pentru a afișa informațiile despre sistem.
+
+[Utilizare din orice locație din terminal](utilizare.md)
 
 #### Exemplu de Rulare
 ```bash
