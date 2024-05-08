@@ -1,34 +1,34 @@
 #!/bin/bash
 
-# Funcție pentru afișarea logo-ului Arch Linux în format ASCII colorat
-print_arch_logo() {
-    echo -e "\e[1;35m _     _              _                                   _     ";
-    echo -e "\e[1;35m| |   | |            (_)                                 | |    ";
-    echo -e "\e[1;35m| |__ | |___      __  _   _   _ ___  ___    __ _ _ __ ___| |__  ";
-    echo -e "\e[1;35m| '_ \| __\ \ /\ / / | | | | | / __|/ _ \  / _\` | '__/ __| '_ \ ";
-    echo -e "\e[1;35m| |_) | |_ \ V  V /  | | | |_| \__ \  __/ | (_| | | | (__| | | |";
-    echo -e "\e[1;35m|_.__/ \__| \_/\_/   |_|  \__,_|___/\___|  \__,_|_|  \___|_| |_|";
-    echo -e "\e[1;35m                                                                ";
-    echo -e "\e[1;35m                                                                ";
+# Function to display the Arch Linux logo in colored ASCII art
+print_linux_logo() {
+    echo -e "\e[1;35m  _     _              _                    _ _                  "
+    echo -e "\e[1;35m | |   | |            (_)                  | (_)                 "
+    echo -e "\e[1;35m | |__ | |___      __  _   _   _ ___  ___  | |_ _ __  _   ___  __"
+    echo -e "\e[1;35m | '_ \| __\ \ /\ / / | | | | | / __|/ _ \ | | | '_ \| | | \ \/ /"
+    echo -e "\e[1;35m | |_) | |_ \ V  V /  | | | |_| \__ \  __/ | | | | | | |_| |>  < "
+    echo -e "\e[1;35m |_.__/ \__| \_/\_/   |_|  \__,_|___/\___| |_|_|_| |_|\__,_/_/\_\ "
+    echo -e "\e[1;35m                                                                 "
+    echo -e "\e[1;35m                                                                 "
 }
 
-# Funcție pentru afișarea informațiilor despre sistem, cu pictograme
+# Function to display system information with icons
 print_system_info() {
-    # Nume utilizator și nume sistem de operare
+    # Username and operating system name
     echo -e "\e[1;32m┌──────────────────────────────────────────────────────────────────────┐"
     echo -e "│\e[1;32m👤 $(whoami)@$(uname -n)                                                │"
     echo -e "├──────────────────────────────────────────────────────────────────────┤"
 
-    # Informații despre sistem
+    # System information
     if command -v lsb_release &>/dev/null; then
-        echo -e "│\e[1;34m💻 OS: $(lsb_release -d -s)                                                                                                     │"
+        echo -e "│\e[1;34m💻 OS: $(lsb_release -d -s | sed 's/"/\\"/g')                                                 │"
     elif [ -e /etc/os-release ]; then
-        echo -e "│\e[1;34m💻 OS: $(grep "^PRETTY_NAME" /etc/os-release | cut -d "=" -f 2 | tr -d '"')                                                     │"
+        echo -e "│\e[1;34m💻 OS: $(grep "^PRETTY_NAME" /etc/os-release | cut -d "=" -f 2 | tr -d '"' | sed 's/"/\\"/g')│"
     else
-        echo -e "│\e[1;34m💻 OS: N/A                                                                                                                      │"
+        echo -e "│\e[1;34m💻 OS: N/A                                                         │"
     fi
 
-    # Alte informații despre sistem
+    # Other system information
     echo -e "│\e[1;34m🏠 Host: $(hostname)                                                    │"
     echo -e "│\e[1;34m🐧 Kernel: $(uname -r)                                              │"
     echo -e "│\e[1;34m⏲️ Uptime: $(uptime -p | sed 's/up //')                                         │"
@@ -37,7 +37,7 @@ print_system_info() {
     echo -e "\e[1;32m└──────────────────────────────────────────────────────────────────────┘"
 }
 
-# Funcție pentru numărarea pachetelor instalate
+# Function to count installed packages
 package_count() {
     if command -v pacman &>/dev/null; then
         pacman -Qq | wc -l
@@ -50,6 +50,6 @@ package_count() {
     fi
 }
 
-# Afișare logo Arch Linux și informații despre sistem
-print_arch_logo
+# Display Linux logo and system information
+print_linux_logo
 print_system_info

@@ -1,53 +1,53 @@
 ### ifetch
-**Un instrument de informare a sistemului de linie de comandă scris în bash**
+**A command line system information tool written in bash**
 
 ![](ifetch.png)
 
-#### Introducere
-Acest script Bash oferă utilizatorilor informații minime despre sistemul lor Linux. Afișează informații precum numele utilizatorului, sistemul de operare, kernel-ul, uptime-ul, pachetele instalate și memoria utilizată. 
+#### Introduction
+This Bash script provides users with minimal information about their Linux system. It displays information such as the username, operating system, kernel version, uptime, installed packages, and used memory.
 
-Scopul acestui script este de a oferi o modalitate rapidă și simplă pentru utilizatorii Linux de a obține informații despre sistemul lor.
+The purpose of this script is to offer a quick and simple way for Linux users to obtain information about their system.
 
-#### Utilizare
-Pentru a rula scriptul, urmează acești pași:
+#### Usage
+To run the script, follow these steps:
 
-1. Descarcă scriptul `ifetch.sh` pe sistemul tău Linux.
-2. Deschide un terminal și navighează la directorul în care ai salvat scriptul.
-3. Execută comanda `bash ifetch.sh` pentru a afișa informațiile despre sistem.
+1. Download the `ifetch.sh` script to your Linux system.
+2. Open a terminal and navigate to the directory where you saved the script.
+3. Execute the command `bash ifetch.sh` to display system information.
 
-[Utilizare din orice locație din terminal](utilizare.md)
+[Usage from any location in the terminal](utilizare.md)
 
-#### Exemplu de Rulare
+#### Example Run
 ```bash
 bash ifetch.sh
 ```
 
-#### Dependențe
-Acest script nu are dependențe speciale. Poate fi rulat pe orice distribuție Linux fără a necesita instalarea altor pachete sau programe.
+#### Dependencies
+This script has no special dependencies. It can be run on any Linux distribution without requiring the installation of other packages or programs.
 
-#### Compatibilitate
-Scriptul a fost creat să fie compatibil cu toate versiunile majore de distribuții Linux, dar a fost testat doar pe Arch Linux.
+#### Compatibility
+The script was created to be compatible with all major versions of Linux distributions, but it has only been tested on Arch Linux.
 
-#### Personalizare
-Dacă dorești să personalizezi scriptul, poți modifica direct codul sursă pentru a adăuga sau elimina informații. Asigură-te că ai cunoștințele necesare despre Bash scripting pentru a face modificările corespunzătoare.
+#### Customization
+If you wish to customize the script, you can directly modify the source code to add or remove information. Make sure you have the necessary knowledge of Bash scripting to make the appropriate changes.
 
-#### Detalii Tehnice
-Scriptul utilizează comenzi și utilitare comune disponibile pe majoritatea distribuțiilor Linux pentru a colecta și a afișa informațiile despre sistem.
+#### Technical Details
+The script uses common commands and utilities available on most Linux distributions to collect and display system information.
 
-#### Ghid de Contribuție
-Dacă dorești să contribuiți la dezvoltarea acestui script, te rog să urmezi acești pași:
+#### Contribution Guide
+If you wish to contribute to the development of this script, please follow these steps:
 
-1. Fork acestui repository.
-2. Creează o ramură (branch) nouă pentru modificările tale: `git checkout -b feature/Modificari`.
-3. Efectuează modificările și comite-le: `git commit -am 'Adaugă modificările propuse'`.
-4. Trimite-ți modificările: `git push origin feature/Modificari`.
-5. Deschide un Pull Request (PR) pentru a propune modificările.
+1. Fork this repository.
+2. Create a new branch for your changes: `git checkout -b feature/Modifications`.
+3. Make the changes and commit them: `git commit -am 'Add proposed changes'`.
+4. Push your changes: `git push origin feature/Modifications`.
+5. Open a Pull Request (PR) to propose the changes.
 
-#### Licențiere
-Acest script este distribuit sub licența [GPL 3.0](https://github.com/thinkroot99/ifetch?tab=GPL-3.0-1-ov-file).
+#### Licensing
+This script is distributed under the [GPL 3.0 license](https://github.com/thinkroot99/ifetch?tab=GPL-3.0-1-ov-file).
 
-#### Observații
-- Scriptul nu necesită permisiuni speciale de execuție și poate fi rulat ca utilizator obișnuit.
-- Pentru informații specifice despre comenzile utilizate în script, poți utiliza `man` sau `--help` pentru a obține mai multe detalii.
+#### Notes
+- The script does not require special execution permissions and can be run as a regular user.
+- For specific information about the commands used in the script, you can use `man` or `--help` to get more details.
 
-Această documentație oferă utilizatorilor informații detaliate despre utilizare, contribuție și licențiere, împreună cu exemple de utilizare și observații importante. Poate fi adaptată și completată în funcție de nevoile tale specifice și de cerințele proiectului tău.
+This documentation provides users with detailed information about usage, contribution, and licensing, along with usage examples and important notes. It can be adapted and expanded according to your specific needs and project requirements.

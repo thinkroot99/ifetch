@@ -1,32 +1,32 @@
-# Utilizare
+# Usage
 
-Pentru a face scriptul să poată fi instalat și utilizat, trebuie să creezi un fișier binar executabil și să-l plasezi într-un director care este inclus în variabila de mediu PATH. Acest lucru îți va permite să rulezi scriptul din orice locație din terminal, fără a specifica calea completă către script.
+To make the script installable and usable, you need to create an executable binary file and place it in a directory that is included in the PATH environment variable. This will allow you to run the script from any location in the terminal without specifying the full path to the script.
 
-**Iată pașii pe care îi poți urma:**
+**Here are the steps you can follow:**
 
-1. **Modificarea scriptului**: Asigură-te că scriptul are extensia ".sh" și că are permisiunile adecvate de execuție folosind comanda `chmod +x ifetch.sh`.
+1. **Modify the script**: Make sure the script has the ".sh" extension and has the proper execution permissions using the `chmod +x ifetch.sh` command.
 
-2. **Creează un director pentru script**: Poți crea un director special pentru script. De exemplu, poți crea un director numit „.bin” în directorul home al utilizatorului tău:
+2. **Create a directory for the script**: You can create a special directory for the script. For example, you can create a directory named ".bin" in your home directory:
    ```bash
    mkdir ~/.bin
    ```
 
-3. **Mută scriptul în moul director**: Mută scriptul în directorul pe care l-ai creat:
+3. **Move the script to the created directory**: Move the script to the directory you created:
    ```bash
    mv ifetch.sh ~/.bin
    ```
 
-4. **Adaugă directorul în variabila PATH**: Deschide fișierul de configurare a shell-ului tău (de obicei `.bashrc`, `.bash_profile`, `.zshrc`, etc.) și adaugă următoarea linie la sfârșitul fișierului:
+4. **Add the directory to the PATH variable**: Open your shell configuration file (usually `.bashrc`, `.bash_profile`, `.zshrc`, etc.) and add the following line at the end of the file:
    ```bash
    export PATH="$HOME/.bin:$PATH"
    ```
 
-5. **Reîncarcă configurația shell-ului**: Pentru a aplica modificările, reîncarcă configurația shell-ului tău folosind comanda:
+5. **Reload the shell configuration**: To apply the changes, reload your shell configuration using the command:
    ```bash
    source ~/.bashrc
    ```
 
-După acești pași, poți să rulezi scriptul din orice locație din terminal, folosind doar numele său. De exemplu:
+After these steps, you can run the script from any location in the terminal using just its name. For example:
 ```bash
 ifetch.sh
 ```
