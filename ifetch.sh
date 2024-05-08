@@ -29,11 +29,21 @@ print_system_info() {
     fi
 
     # Other system information
-    echo -e "│\e[1;34m🏠 Host: $(hostname)                                                    │"
-    echo -e "│\e[1;34m🐧 Kernel: $(uname -r)                                           │"
-    echo -e "│\e[1;34m⏲️ Uptime: $(uptime -p | sed 's/up //')                                          │"
-    echo -e "│\e[1;34m📦 Packages: $(package_count)                                                     │"
-    echo -e "│\e[1;34m💾 Memory: $(free -h | awk '/^Mem:/ {print $3 " / " $2}')                                               │"
+    if command -v hostname &>/dev/null; then
+        echo -e "│\e[1;34m🏠 Host: $(hostname)                                                    │"
+    fi
+    if command -v uname &>/dev/null; then
+        echo -e "│\e[1;34m🐧 Kernel: $(uname -r)                                           │"
+    fi
+    if command -v uptime &>/dev/null; then
+        echo -e "│\e[1;34m⏲️ Uptime: $(uptime -p | sed 's/up //')                                          │"
+    fi
+    if command -v package_count &>/dev/null; then
+        echo -e "│\e[1;34m📦 Packages: $(package_count)                                                     │"
+    fi
+    if command -v free &>/dev/null; then
+        echo -e "│\e[1;34m💾 Memory: $(free -h | awk '/^Mem:/ {print $3 " / " $2}')                                               │"
+    fi
     echo -e "\e[1;32m└──────────────────────────────────────────────────────────────────────┘"
 }
 
