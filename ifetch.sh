@@ -31,7 +31,7 @@ print_system_info() {
     # Other system information
     echo -e "│\e[1;34m🏠 Host: $(hostname)                                                    │"
     echo -e "│\e[1;34m🐧 Kernel: $(uname -r)                                           │"
-    echo -e "│\e[1;34m⏲️ Uptime: $(uptime -p | sed 's/up //')                                         │"
+    echo -e "│\e[1;34m⏲️ Uptime: $(uptime -p | sed 's/up //')                                          │"
     echo -e "│\e[1;34m📦 Packages: $(package_count)                                                     │"
     echo -e "│\e[1;34m💾 Memory: $(free -h | awk '/^Mem:/ {print $3 " / " $2}')                                               │"
     echo -e "\e[1;32m└──────────────────────────────────────────────────────────────────────┘"
